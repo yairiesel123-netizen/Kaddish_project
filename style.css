@@ -1,0 +1,337 @@
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
+}
+
+/* תפריט צד קבוע בצד ימין */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #1a2a4a;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  display: block;
+  padding: 14px 16px;
+  min-height: 60px;
+  box-sizing: border-box;
+  background: #fff;
+  color: #1a2a4a;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: #ffd84d;
+}
+
+.nav-cta {
+  background: #ffd84d;
+}
+
+.font-controls {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.font-controls button {
+  min-width: 70px;
+  min-height: 60px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a2a4a;
+  cursor: pointer;
+}
+
+/* אזור התוכן הראשי */
+.content {
+  margin-right: 300px;
+  padding: 30px 40px;
+}
+
+section {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #ddd;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #1a2a4a;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  border-radius: 8px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-boxes {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.contact-column {
+  flex: 1;
+}
+
+.contact-column .big-button:first-child {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  font-size: 1.1rem;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+.big-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 18px;
+  min-height: 70px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #1a2a4a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-message {
+  padding: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1a7f37;
+  border: 3px solid #1a7f37;
+  border-radius: 8px;
+}
+
+.whatsapp {
+  background: #1a7f37;
+}
+
+/* כרטיסיות חבילות */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  padding: 24px;
+  border: 3px solid #1a2a4a;
+  border-radius: 12px;
+  color: #111;
+  text-decoration: none;
+  text-align: center;
+}
+
+.card:hover,
+.card:focus {
+  background: #fff6cc;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1a2a4a;
+}
+
+.card-button {
+  display: block;
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: #1a2a4a;
+  border-radius: 8px;
+}
+
+/* הסבר על התהליך */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.step {
+  padding: 24px;
+  border: 3px solid #1a2a4a;
+  border-radius: 12px;
+}
+
+.step h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #1a2a4a;
+}
+
+.step-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 10px;
+  text-align: center;
+  border-radius: 50%;
+  background: #1a2a4a;
+  color: #fff;
+}
+
+.step li {
+  margin-bottom: 12px;
+}
+
+/* שאלות נפוצות */
+.faq-item {
+  margin-bottom: 16px;
+  border: 3px solid #1a2a4a;
+  border-radius: 8px;
+}
+
+.faq-item summary {
+  padding: 18px 20px;
+  min-height: 60px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a2a4a;
+  cursor: pointer;
+}
+
+.faq-item[open] summary {
+  background: #fff6cc;
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 16px 20px 20px;
+}
+
+/* מקורות הלכתיים */
+.sources {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.source {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.source h3 {
+  margin: 0;
+}
+
+.source-ref {
+  margin: 4px 0 0;
+  color: #444;
+}
+
+.source-headline {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1a2a4a;
+}
+
+.source .card-button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* מסכים צרים: התפריט נשאר בצד, רק צר יותר */
+@media (max-width: 800px) {
+  .sidebar {
+    width: 180px;
+    padding: 12px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .content {
+    margin-right: 180px;
+    padding: 20px 16px;
+  }
+
+  .contact-boxes {
+    flex-direction: column;
+  }
+}

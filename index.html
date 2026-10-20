@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>קדיש לדורות</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- תפריט צד קבוע -->
+  <nav class="sidebar">
+    <div class="logo">קדיש לדורות</div>
+    <a href="#about" class="nav-link">קצת עלינו</a>
+    <a href="#packages" class="nav-link">חבילות ומחירים</a>
+    <a href="#sources" class="nav-link">מקורות הלכתיים לחשיבות הקדיש</a>
+    <a href="#process" class="nav-link">הסבר מפורט על התהליך</a>
+    <a href="#faq" class="nav-link">שאלות נפוצות</a>
+    <a href="#contact" id="nav-contact" class="nav-link nav-cta">השארת פרטים</a>
+    <div class="font-controls">
+      <span>גודל כתב:</span>
+      <button type="button" id="font-bigger" aria-label="הגדלת כתב">א+</button>
+      <button type="button" id="font-smaller" aria-label="הקטנת כתב">א−</button>
+    </div>
+  </nav>
+
+  <main class="content">
+
+    <!-- דף הבית -->
+    <section id="home">
+      <h1 class="headline">אמירת קדיש ופרק תהילים במניין ביום השנה לפטירה</h1>
+
+      <!-- להחלפה בסרטון: <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe> -->
+      <div class="video">
+        <span>[כאן יוצג הסרטון]</span>
+      </div>
+
+      <div id="contact" class="contact-boxes">
+        <div class="contact-column">
+          <button type="button" id="show-form" class="big-button">השארת פרטים לשיחה</button>
+          <form id="lead-form" hidden>
+            <label for="name">שם מלא</label>
+            <input type="text" id="name" required>
+            <label for="phone">מספר פלאפון</label>
+            <input type="tel" id="phone" required>
+            <button type="submit" class="big-button">לחצו כאן: נא לחזור אליי</button>
+          </form>
+          <p id="form-message" class="form-message" hidden>הפרטים שלך נשמרו בבטחה</p>
+        </div>
+
+        <div class="contact-column">
+          <a id="whatsapp-link" class="big-button whatsapp" href="#" target="_blank" rel="noopener">מענה דרך וואטסאפ</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>קצת עלינו</h2>
+      <p>אנו מאמינים שכל אדם ראוי שיזכרו אותו ויאמרו עליו קדיש.</p>
+      <p>"קדיש לדורות" נוסד מתוך הבנה שלא לכל אחד יש מי שיעלה לקברו ביום השנה ויאמר עליו קדיש במניין. אנו לוקחים על עצמנו את השליחות הזו באחריות, ביראת שמיים ובכבוד – כדי שתוכלו להיות רגועים ובטוחים שנשמתכם תזכה לעילוי בכל שנה ושנה.</p>
+      <p>אנו עומדים לרשותכם בכל שאלה, בסבלנות ובמאור פנים.</p>
+    </section>
+
+    <section id="packages">
+      <h2>חבילות ומחירים</h2>
+      <p>לחצו על החבילה המתאימה כדי לעבור לתשלום.</p>
+      <div class="cards">
+        <a class="card" href="#">
+          <h3>שנה אחת</h3>
+          <p class="price">1,100 ₪</p>
+          <p>אמירת קדיש ופרק תהילים במניין ביום השנה לפטירה במשך שנה אחת</p>
+          <span class="card-button">לתשלום</span>
+        </a>
+        <a class="card" href="#">
+          <h3>חמש שנים</h3>
+          <p class="price">5,500 ₪</p>
+          <p>אמירת קדיש ופרק תהילים במניין ביום השנה לפטירה במשך 5 שנים</p>
+          <span class="card-button">לתשלום</span>
+        </a>
+        <a class="card" href="#">
+          <h3>10 שנים</h3>
+          <p class="price">10,500 ₪</p>
+          <p>אמירת קדיש ופרק תהילים במניין ביום השנה לפטירה במשך 10 שנים</p>
+          <span class="card-button">לתשלום</span>
+        </a>
+        <a class="card" href="#">
+          <h3>20 שנה</h3>
+          <p class="price">20,000 ₪</p>
+          <p>אמירת קדיש ופרק תהילים במניין ביום השנה לפטירה במשך 20 שנים</p>
+          <span class="card-button">לתשלום</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="sources">
+      <h2>מקורות הלכתיים לחשיבות הקדיש</h2>
+      <p>לחצו על המקור כדי לקרוא אותו במלואו.</p>
+      <div class="sources">
+        <a class="card source" href="https://www.sefaria.org/Sotah.34b" target="_blank" rel="noopener">
+          <h3>כלב בן יפונה – תלמוד בבלי</h3>
+          <p class="source-ref">מסכת סוטה, דף ל"ד ע"ב</p>
+          <p class="source-headline">כלב הלך להשתטח על קברי האבות ולהתפלל שם – מכאן לחשיבות התפילה על הקבר</p>
+          <span class="card-button">למקור המלא</span>
+        </a>
+        <a class="card source" href="https://www.yeshiva.org.il/midrash/28606" target="_blank" rel="noopener">
+          <h3>רבי משה פיינשטיין – "אגרות משה"</h3>
+          <p class="source-ref">אגרות משה, יורה דעה א, סימן רנ"ד</p>
+          <p class="source-headline">מותר לשכור אדם שיאמר קדיש לעילוי נשמת הנפטר</p>
+          <span class="card-button">למקור המלא</span>
+        </a>
+        <a class="card source" href="https://he.wikisource.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%99%D7%95%D7%A1%D7%A3/%D7%94%D7%A7%D7%93%D7%99%D7%A9/%D7%A1%D7%A2%D7%99%D7%A3_%D7%98" target="_blank" rel="noopener">
+          <h3>המגן אברהם</h3>
+          <p class="source-ref">מגן אברהם, אורח חיים, סימן קל"ב, ס"ק ב</p>
+          <p class="source-headline">מוטב לשכור אדם שיאמר קדיש, משיאמר אחר בחינם</p>
+          <span class="card-button">למקור המלא</span>
+        </a>
+        <a class="card source" href="https://chabadpedia.co.il/index.php/%D7%99%D7%90%D7%A8%D7%A6%D7%99%D7%99%D7%98" target="_blank" rel="noopener">
+          <h3>האר"י הקדוש ורבי חיים ויטאל – "שער הכוונות"</h3>
+          <p class="source-headline">ביום הפטירה הנשמה עולה ממדרגה למדרגה בכל שנה – ולכן יש לסייע לה באמירת קדיש</p>
+          <span class="card-button">למקור המלא</span>
+        </a>
+        <a class="card source" href="https://din.org.il/2012/10/27/%D7%A2%D7%9C%D7%99%D7%99%D7%94-%D7%9C%D7%A7%D7%91%D7%A8-%D7%9C%D7%90%D7%97%D7%A8-%D7%94%D7%99%D7%90%D7%A8%D7%A6%D7%99%D7%99%D7%98/" target="_blank" rel="noopener">
+          <h3>"קיצור דברי סופרים"</h3>
+          <p class="source-headline">מנהג העולם לעלות לקבר ביום היארצייט עצמו</p>
+          <span class="card-button">למקור המלא</span>
+        </a>
+        <a class="card source" href="https://halachayomit.co.il/he/ReadHalacha.aspx?halachaid=2335" target="_blank" rel="noopener">
+          <h3>הרב עובדיה יוסף</h3>
+          <p class="source-ref">שו"ת יביע אומר, חלק ח, יורה דעה, סימן ל"ז</p>
+          <p class="source-headline">לנפטר שלא הותיר בנים – טוב לשכור תלמיד חכם שיאמר קדיש לעילוי נשמתו</p>
+          <span class="card-button">למקור המלא</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="process">
+      <h2>הסבר מפורט על התהליך</h2>
+      <div class="steps">
+        <div class="step">
+          <h3><span class="step-number">1</span> הבטחת הכספים בנאמנות משפטית מוגנת</h3>
+          <p>כל התשלומים אינם מועברים לחברה עסקית רגילה, אלא מופקדים ישירות בחשבון נאמנות סגור ומפוקח בניהול עורך דין. הכספים מושקעים באפיקים סולידיים וצמודי מדד, מה שמגן עליהם מפני אינפלציה ומבטיח מימון מלא של הגעת המניינים לעשרות רבות של שנים קדימה – ללא תלות בהמשך פעילות החברה.</p>
+        </div>
+
+        <div class="step">
+          <h3><span class="step-number">2</span> מעקב שוטף וזיהוי מועד הפטירה (לאחר 120)</h3>
+          <p>אינך צריך לחשוש שמא לא נדע על יום הפטירה:</p>
+          <ul>
+            <li><strong>סנכרון מול מאגרים רשמיים:</strong> המערכת שלנו מבצעת בדיקות תקופתיות שוטפות והצלבה מול רשומות הפטירה הרשמיות בישראל (רשם האוכלוסין, הביטוח הלאומי ומאגרי חברה קדישא).</li>
+            <li><strong>שיחת שלום חצי-שנתית:</strong> אנו מקיימים קשר יזום פעמיים בשנה – לקראת ראש השנה ופסח – כדי לדרוש בשלומך, לברך בחג שמח ולוודא שהכל כשורה.</li>
+            <li><strong>איש קשר לגיבוי (אופציונלי):</strong> ניתן להזין בהרשמה פרטי קרוב, שכן או עורך דין שיוכל לעדכן אותנו במידת הצורך.</li>
+          </ul>
+        </div>
+
+        <div class="step">
+          <h3><span class="step-number">3</span> הגעת מניין ביום השנה לחלקת הקבר</h3>
+          <p>בכל שנה, בתאריך הפטירה העברי (היארצייט), אנו מתאמים ומביאים מניין של עשרה אנשים יראי שמיים ישירות אל חלקת הקבר שלך בבית העלמין. המניין מתייצב לצד המצבה, קורא פרקי תהילים, ואומר קדיש כהלכתו לעילוי הנשמה ביראת כבוד.</p>
+          <p>אנו מגיעים לכל בית עלמין בישראל.</p>
+        </div>
+
+        <div class="step">
+          <h3><span class="step-number">4</span> תיעוד מלא, שקיפות ובקרה</h3>
+          <p>אנו מקפידים על אמינות ושקיפות מלאה: המעמד כולו מתועד בצילום וידאו ותמונות ברורות הכוללות חותמת תאריך, שעה ומיקום ליד המצבה. התיעוד נשמר לצמיתות בתיק הנאמנות האישי שלך ונשלח בדוא"ל או בהודעה לאנשי הקשר שהגדרת.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>שאלות נפוצות</h2>
+      <details class="faq-item">
+        <summary>מי אומר את הקדיש אם אין לי בן?</summary>
+        <p>אנו מביאים מניין של עשרה אנשים יראי שמיים, ואחד מהם אומר את הקדיש לעילוי נשמתך. גדולי הפוסקים, ובהם הרב עובדיה יוסף ורבי משה פיינשטיין, כתבו שטוב לשכור אדם שיאמר קדיש לעילוי נשמת הנפטר. ראו בפרק "מקורות הלכתיים".</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>מה קורה לכסף ששילמתי אם החברה תיסגר?</summary>
+        <p>הכספים מופקדים בחשבון נאמנות סגור ומפוקח בניהול עורך דין, ולא בחשבון החברה. כך מובטח מימון המניינים גם ללא תלות בהמשך פעילות החברה.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>איך תדעו שנפטרתי?</summary>
+        <p>אנו מבצעים בדיקות תקופתיות מול רשומות הפטירה הרשמיות, מקיימים שיחת שלום פעמיים בשנה, וניתן להגדיר איש קשר שיעדכן אותנו.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>איך אדע שהמניין באמת הגיע?</summary>
+        <p>כל מעמד מתועד בווידאו ובתמונות עם תאריך, שעה ומיקום, והתיעוד נשלח לאנשי הקשר שהגדרת.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>לאיזה בתי עלמין אתם מגיעים?</summary>
+        <p>לכל בית עלמין בישראל.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>מה קורה אם יום השנה חל בשבת או בחג?</summary>
+        <p>בשבת ובחג אין עולים לבית העלמין. במקרה כזה, כפי שפסקו הפוסקים (ובהם ילקוט יוסף), אנו מקדימים ומגיעים עם המניין לקבר ביום שלפני השבת או החג.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>האם אפשר לבטל ולקבל את הכסף בחזרה?</summary>
+        <p>ניתן לבטל את ההתקשרות, בכפוף לדמי ביטול בסך 1,100 ₪.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>האם אפשר לרכוש את השירות עבור הורה או קרוב?</summary>
+        <p>כן. ניתן לרכוש את השירות עבור הורה, בן משפחה או כל אדם יקר.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
