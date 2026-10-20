@@ -24,6 +24,25 @@ leadForm.addEventListener("submit", function (e) {
   document.getElementById("form-message").hidden = false;
 });
 
+// תפריט בטלפון: נפתח ונסגר בלחיצה, ונסגר אחרי בחירת קישור
+const menuToggle = document.getElementById("menu-toggle");
+
+function setMenuOpen(open) {
+  document.body.classList.toggle("menu-open", open);
+  menuToggle.setAttribute("aria-expanded", open);
+  menuToggle.textContent = open ? "✕ סגירת תפריט" : "☰ תפריט";
+}
+
+menuToggle.addEventListener("click", function () {
+  setMenuOpen(!document.body.classList.contains("menu-open"));
+});
+
+document.querySelectorAll(".nav-link").forEach(function (link) {
+  link.addEventListener("click", function () {
+    setMenuOpen(false);
+  });
+});
+
 // הגדלת / הקטנת כתב
 let fontSize = 20;
 
