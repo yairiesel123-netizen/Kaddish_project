@@ -1,5 +1,5 @@
-// מספר וואטסאפ בפורמט בינלאומי, ללא + וללא מקפים (להחלפה במספר האמיתי)
-const WHATSAPP_NUMBER = "972500000000";
+// מספר וואטסאפ בפורמט בינלאומי, ללא + וללא מקפים
+const WHATSAPP_NUMBER = "972507895553";
 
 // כפתור וואטסאפ
 document.getElementById("whatsapp-link").href = "https://wa.me/" + WHATSAPP_NUMBER;
